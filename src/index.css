@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
+  --color-primary-300: #93c5fd;
+  --color-primary-400: #60a5fa;
+  --color-primary-500: #2563eb;
+  --color-primary-600: #1d4ed8;
+  --color-primary-700: #1e40af;
+  --color-primary-800: #1e3a8a;
+  --color-primary-900: #172554;
+
+  --color-accent: #f59e0b;
+  --color-accent-light: #fcd34d;
+  --color-accent-dark: #b45309;
+
+  --color-neutral-50: #f8fafc;
+  --color-neutral-100: #f1f5f9;
+  --color-neutral-200: #e2e8f0;
+  --color-neutral-300: #cbd5e1;
+  --color-neutral-400: #94a3b8;
+  --color-neutral-500: #64748b;
+  --color-neutral-600: #475569;
+  --color-neutral-700: #334155;
+  --color-neutral-800: #1e293b;
+  --color-neutral-900: #0f172a;
+
+  --font-display: 'Cormorant Garamond', serif;
+  --font-sans: 'DM Sans', sans-serif;
+
+  --animate-fade-up: fade-up 0.6s ease forwards;
+  --animate-fade-up-slow: fade-up 0.9s ease forwards;
+  --animate-fade-in: fade-in 0.5s ease forwards;
+
+  @keyframes fade-up {
+    0%   { opacity: 0; transform: translateY(24px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fade-in {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-white text-neutral-800 antialiased; font-family: var(--font-sans); }
+}
+
+@layer components {
+  .wrapper {
+    @apply max-w-7xl mx-auto px-4 sm:px-8 lg:px-12;
+  }
+  .section-label {
+    @apply text-xs font-semibold tracking-[0.2em] uppercase text-primary-500 mb-2;
+  }
+  .section-title {
+    font-family: var(--font-display);
+    @apply text-4xl sm:text-5xl font-semibold text-neutral-900 leading-tight;
+  }
+  .section-sub {
+    @apply text-neutral-500 text-lg leading-relaxed max-w-2xl;
+  }
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-primary-500 hover:bg-primary-600
+           text-white font-medium px-7 py-3.5 rounded-sm
+           transition-all duration-200 shadow-md hover:shadow-lg active:scale-95;
+  }
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border border-primary-500 text-primary-500
+           hover:bg-primary-500 hover:text-white font-medium px-7 py-3.5 rounded-sm
+           transition-all duration-200 active:scale-95;
+  }
+  .btn-white {
+    @apply inline-flex items-center gap-2 bg-white text-primary-600
+           hover:bg-neutral-100 font-medium px-7 py-3.5 rounded-sm
+           transition-all duration-200 shadow active:scale-95;
+  }
+  .card {
+    @apply bg-white border border-neutral-200 rounded-sm shadow-sm
+           hover:shadow-md transition-shadow duration-200;
+  }
+  .divider-accent {
+    @apply w-12 h-0.5 bg-accent mb-6;
+  }
+}
