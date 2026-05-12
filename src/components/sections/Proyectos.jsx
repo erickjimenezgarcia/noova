@@ -8,7 +8,7 @@ const PROYECTOS = [
     titulo: "Proyecto de Ventilación U.M Yaruchahua – Glore Peru S.A.C",
     fecha: "Marzo 2020",
     cliente: "GLORE PERU S.A.C",
-    href: "#",
+    href: "/proyectos/glore",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const PROYECTOS = [
     titulo: "Proyecto de Bombeo U.M Aguilar – Compañía Minera Aguilar S.A",
     fecha: "Mayo 2018",
     cliente: "Minera Aguilar",
-    href: "#",
+    href: "/proyectos/mineria",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const PROYECTOS = [
     titulo: "Proyecto de Bombeo U.M Santander – Glencore Trevali",
     fecha: "Mayo 2018",
     cliente: "LosQuenuales",
-    href: "#",
+    href: "/proyectos/quenuales",
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ const PROYECTOS = [
     titulo: "Proyecto de Ventilación U.M San Vicente – Pan American Silver Bolivia S.A",
     fecha: "Septiembre 2015",
     cliente: "Pan American Silver",
-    href: "#",
+    href: "/proyectos/panamerican",
   },
   {
     id: 5,
@@ -40,7 +40,7 @@ const PROYECTOS = [
     titulo: "Proyecto de Drenaje U.M Cerro Lindo – Nexa Resources S.A.A",
     fecha: "Enero 2020",
     cliente: "Nexa Resources",
-    href: "#",
+    href: "/proyectos/nexaresources",
   },
   {
     id: 6,
@@ -48,7 +48,7 @@ const PROYECTOS = [
     titulo: "Proyecto de Ventilación U.M Coripuno – Coripuno S.A.C",
     fecha: "Julio 2019",
     cliente: "Coripuno S.A.C",
-    href: "#",
+    href: "/proyectos/coripuno",
   },
   {
     id: 7,
@@ -56,7 +56,7 @@ const PROYECTOS = [
     titulo: "Proyecto de Bombeo U.M Yauricocha – Sierra Metals INC",
     fecha: "Marzo 2021",
     cliente: "Sierra Metals",
-    href: "#",
+    href: "/proyectos/sierrametals",
   },
   {
     id: 8,
@@ -64,7 +64,7 @@ const PROYECTOS = [
     titulo: "Proyecto Integral U.M Atacocha – Milpo S.A.A",
     fecha: "Noviembre 2017",
     cliente: "Milpo S.A.A",
-    href: "#",
+    href: "/proyectos/milpo",
   },
 ];
 

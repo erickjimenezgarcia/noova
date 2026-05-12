@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate  } from "react-router-dom";
 
 const catalogos = [
   {
@@ -43,6 +43,7 @@ const catalogos = [
 
 function CatalogoCard({ cat }) {
   const [hovered, setHovered] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <div
@@ -50,36 +51,33 @@ function CatalogoCard({ cat }) {
       style={{ cursor: "pointer" }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      onClick={() => navigate(cat.url)}  // ← toda la card navega
     >
-      {/* Imagen con zoom y transparencia en hover */}
       <div className="w-full rounded overflow-hidden relative" style={{ height: 200 }}>
-  <img
-    src={cat.img}
-    alt={cat.titulo}
-    className="w-full h-full object-cover"
-    style={{
-      transition: "transform 0.4s ease",
-      transform: hovered ? "scale(1.08)" : "scale(1)",
-    }}
-  />
-  {/* Overlay gris */}
-  <div
-    className="absolute inset-0"
-    style={{
-      backgroundColor: "rgba(0, 0, 0, 0.4)",
-      transition: "opacity 0.4s ease",
-      opacity: hovered ? 1 : 0,
-    }}
-  />
-</div>
+        <img
+          src={cat.img}
+          alt={cat.titulo}
+          className="w-full h-full object-cover"
+          style={{
+            transition: "transform 0.4s ease",
+            transform: hovered ? "scale(1.08)" : "scale(1)",
+          }}
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundColor: "rgba(0, 0, 0, 0.4)",
+            transition: "opacity 0.4s ease",
+            opacity: hovered ? 1 : 0,
+          }}
+        />
+      </div>
 
-      {/* Título */}
       <p className="text-center font-bold text-base mt-4 mb-3 text-gray-800">
         {cat.titulo}
       </p>
 
-      {/* Botón cambia color en hover de la card */}
-      <Link to={cat.url}>
+      <Link to={cat.url} onClick={(e) => e.stopPropagation()}>
         <button
           className="rounded font-semibold px-7 py-2 text-sm"
           style={{

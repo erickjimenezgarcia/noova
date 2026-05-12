@@ -23,6 +23,8 @@ import ServiciosPage from "./pages/ServiciosPage";
 import TerminosPage from "./pages/TerminosPage";
 import PoliticasPage from "./pages/PoliticasPage";
 import CatalogoPage from "./pages/CatalogoPage";
+import ProyectosSlugPage from "./pages/ProyectosSlugPage";
+import ProductosSlugPage from "./pages/ProductosSlugPage";
 
 
 function Home() {
@@ -52,7 +54,9 @@ export default function App() {
         <Route path="/acerca-nosotros"   element={<AcercaNosotros />} />
         <Route path="/contactanos"   element={<Contactanos />} />
         <Route path="/productos"   element={<Productos />} />
+        <Route path="/productos/:slug"   element={<ProductosSlugPage />} />
         <Route path="/proyectos"   element={<ProyectosPage />} />
+        <Route path="/proyectos/:slug"   element={<ProyectosSlugPage />} />
         <Route path="/servicios"   element={<ServiciosPage />} />
         <Route path="/terminos"   element={<TerminosPage />} />
         <Route path="/politicas"   element={<PoliticasPage />} />
