@@ -54,7 +54,7 @@ const cards = [
       "Bombeo y drenaje de aguas subterráneas",
       "Asesoría minera",
     ],
-    href: "#servicios",
+    href: "/servicios",
   },
   {
     image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80",
@@ -64,7 +64,7 @@ const cards = [
       "Bombeo U.M. Yauricocha - Sierra Metals INC.",
       "Precención de Incendios U.M. Cerro Lindo - Nexa Resources S.A.A.",
     ],
-    href: "#proyectos",
+    href: "/proyectos",
   },
   {
     image: "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=600&q=80",
@@ -74,7 +74,7 @@ const cards = [
       "Equipos TESTO",
       "Comisub",
     ],
-    href: "#productos",
+    href: "/productos",
   },
 ];
 

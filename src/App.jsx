@@ -11,6 +11,7 @@ import Clientes       from "./components/sections/Clientes";
 import Aliados        from "./components/sections/Aliados";
 import ContactoInicio from "./components/sections/ContactoInicio";
 import NoticiasInicio from "./components/sections/NoticiasInicio";
+import WhatsAppButton from "./components/layout/WhatsappButton";
 
 
 
@@ -38,7 +39,7 @@ function Home() {
         <Proyectos />
         <Clientes />
         <Aliados />
-        <NoticiasInicio />
+        {/* <NoticiasInicio /> */}
         <ContactoInicio />
       </main>
       <Footer />
@@ -49,6 +50,7 @@ function Home() {
 export default function App() {
   return (
     <BrowserRouter>
+      <WhatsAppButton />
       <Routes>
         <Route path="/"                  element={<Home />} />
         <Route path="/acerca-nosotros"   element={<AcercaNosotros />} />

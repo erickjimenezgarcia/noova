@@ -9,7 +9,7 @@ const NAV = [
     label: "Proyectos",
     href: "/proyectos",
     children: [
-      { label: "Proyecto Placeholder 1", href: "#proyectos" },
+      { label: "Proyecto Placeholder 1", href: "/proyectos/glore" },
       { label: "Proyecto Placeholder 2", href: "#proyectos" },
       { label: "Proyecto Placeholder 3", href: "#proyectos" },
       { label: "Proyecto Placeholder 4", href: "#proyectos" },
@@ -21,8 +21,8 @@ const NAV = [
     label: "Servicios",
     href: "/servicios",
     children: [
-      { label: "Servicio Placeholder 1", href: "#servicios" },
-      { label: "Servicio Placeholder 2", href: "#servicios" },
+      { label: "Servicio Placeholder 1", href: "/servicios/equipos" },
+      { label: "Servicio Placeholder 2", href: "/servicios/calibracion" },
       { label: "Servicio Placeholder 3", href: "#servicios" },
       { label: "Servicio Placeholder 4", href: "#servicios" },
     ],

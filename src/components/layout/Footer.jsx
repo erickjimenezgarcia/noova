@@ -36,7 +36,7 @@ const NAV_LINKS = [
   { label: "Servicios",  to: "/servicios" },
   { label: "Proyectos",  to: "/proyectos" },
   { label: "Productos",  to: "/productos" },
-  { label: "Noticias",   to: "/noticias" },
+  // { label: "Noticias",   to: "/noticias" },
   { label: "Contáctanos", to: "/contacto" },
 ];
 
